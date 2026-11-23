@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mahny Barazandehtar</title>
+    <meta content="Research, projects and a journal on machine learning, privacy and conservation." name="description" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png" type="image/png">
+  </head>
+  <body>
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+
+      <header>
+        <div class="header-content">
+          <div class="header-title">Mahny Barazandehtar</div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <strong>Work</strong>
+                <ul>
+                  <li><a href="research.html">Research</a></li>
+                  <li><a href="publications.html">Publications</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                </ul>
+              </li>
+              <li><a href="journal.html">Journal</a></li>
+              <li><a href="reading.html">Reading</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="assets/cv.pdf">CV</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <aside class="left-sidebar">
+<section>
+  <a class="sidebar-about" href="about.html">
+    <h2>About</h2>
+    <p>M.Sc. student in Computer Engineering, working on machine learning, privacy and conservation.</p>
+    <span class="more">Read more →</span>
+  </a>
+</section>
+
+<section>
+  <figure class="sidebar-photo">
+    <img src="images/PofakInTheSun.png" alt="Pofak, an orange cat, asleep in the sun">
+    <figcaption>Pofak chilling in the sun</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Latest</h2>
+  <ul class="sidebar-list">
+    <li>
+      <a href="journal/first-entry.html">A first entry</a>
+      <span class="date">22 Nov 2026</span>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Elsewhere</h2>
+  <ul class="sidebar-list">
+    <li><a href="https://github.com/mahnyb">GitHub</a></li>
+    <li><a href="https://linkedin.com/in/mahnybarazandehtar">LinkedIn</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</section>
+      </aside>
+
+      <main id="content"> 
+<section class="research">
+  <h1>Research</h1>
+  <p class="lead">I build machine learning systems that protect the data they learn from, with a focus on settings where data is sensitive, connectivity is poor and the stakes are practical, such as conservation fieldwork.</p>
+
+  <div class="area">
+    <h2>Federated learning and unlearning</h2>
+    <p>Federated learning trains a shared model across many devices while the raw data stays where it was collected. I'm interested in what happens afterwards, when someone asks for their data to be removed. Federated unlearning aims to erase that influence from the model, and my thesis work looks at how to audit whether it has actually worked.</p>
+    <ul class="tags">
+      <li>Federated learning</li>
+      <li>Machine unlearning</li>
+      <li>Auditing</li>
+    </ul>
+    <p class="area-links"><a href="projects.html">Related projects</a></p>
+  </div>
+
+  <div class="area">
+    <h2>Post-quantum cryptography</h2>
+    <p>NIST has standardized cryptographic schemes designed to resist quantum computers. Adopting them in distributed learning raises practical questions, since the new schemes use larger keys and signatures and the systems that need them often run on weak networks. I measure what that costs against classical baselines under realistic network degradation.</p>
+    <ul class="tags">
+      <li>ML-KEM</li>
+      <li>ML-DSA</li>
+      <li>AES-256-GCM</li>
+      <li>Benchmarking</li>
+    </ul>
+    <p class="area-links"><a href="publications.html">Related publication</a></p>
+  </div>
+
+  <div class="area">
+    <h2>Machine learning for conservation</h2>
+    <p>Conservation produces large volumes of data from camera traps and remote sensors, often in places with limited connectivity and with sensitive information such as the locations of endangered species. I work on classifying camera-trap imagery and on making the systems around it private, efficient and practical to deploy in the field.</p>
+    <ul class="tags">
+      <li>Camera traps</li>
+      <li>Image classification</li>
+      <li>Sensor networks</li>
+    </ul>
+  </div>
+
+  <div class="area">
+    <h2>Where they meet</h2>
+    <p>These three areas share a problem. A conservation sensor network needs models trained on sensitive data that cannot be centralized, over connections that cannot be trusted, and protected against future attackers. My first paper addresses exactly this, benchmarking post-quantum cryptography inside a federated learning system built on wildlife camera-trap data.</p>
+    <p class="area-links"><a href="publications.html">Read the paper</a></p>
+  </div>
+</section>
+              </main>
+
+      <footer>
+        <div>© 2026 Mahny Barazandehtar</div>
+
+      </footer>
+
+    </div>
+  </body>
+</html>
